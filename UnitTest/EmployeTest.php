@@ -15,7 +15,7 @@ class EmployeTest extends PHPUnit_Framework_TestCase {
      * This method is called before a test is executed.
      */
     protected function setUp() {
-        $this->object = new Employe;
+        $this->object = new Employe("Durand", 1000);
     }
 
     /**
@@ -32,9 +32,8 @@ class EmployeTest extends PHPUnit_Framework_TestCase {
      */
     public function testAugmenteSalaire() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->object->augmenteSalaire();
+        self::assertEquals(1050, $this->object->getSalaire());
     }
 
 }

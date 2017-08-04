@@ -24,6 +24,9 @@ class Employe {
         $this->nom = $unNom;
         $this->salaire = $unSalaire;
     }
+    public function getSalaire() {
+        return $this->salaire;
+    }
     /**
      * Augmente le salaire de l'employé courant de $taux pourcent
      * @param double $taux 
