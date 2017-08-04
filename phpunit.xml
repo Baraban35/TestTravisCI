@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="UnitTest/bootstrap.php" colors="true">
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         bootstrap="UnitTest/bootstrap.php"
+>
+
 
     <testsuites>
-        <testsuite name="CacheARP Test Suite">
+        <testsuite name="Test Travis CI Test Suite">
             <directory>./UnitTest/</directory>
         </testsuite>
     </testsuites>
