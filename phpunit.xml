@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="UnitTest/bootstrap.php" colors="true">
+
+    <testsuites>
+        <testsuite name="CacheARP Test Suite">
+            <directory>./UnitTest/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./</directory>
+            <exclude>
+                <directory>./UnitTest</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
