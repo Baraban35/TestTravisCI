@@ -1,0 +1,1 @@
+# Test TRAVIS CI pour un projet PHP
