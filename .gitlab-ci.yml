@@ -25,6 +25,7 @@ before_script:
 test:appweb:
   before_script:
   # Get and run selenium standalone server
+  - apt-get update -yqq
   - apt-get install wget -yqq
   - wget http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar
   - java -jar selenium-server-standalone-2.45.0.jar
