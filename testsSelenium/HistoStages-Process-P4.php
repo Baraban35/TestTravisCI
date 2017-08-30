@@ -1,4 +1,19 @@
 <?php
+/*
+ * Les tests selenium s'appuient sur une API qui dialogue avec un serveur 
+ * selenium indépendant qui instancie et pilote les navigateurs sur demande.
+ * Ce serveur selenium est écrit en java et nécessite donc l'installation d'une jvm.
+ * L'exécution de ce serveur se lance comme suit :
+ * C:\Logiciels\2017-2018>java -jar selenium-server-standalone-2.53.1.jar -Dwebdriv
+er.chrome.driver=chromedriver.exe
+
+ * Le fichier .jar et le pilote de chrome se trouvent ici dans le même répertoire
+ * Ils sont à télécharger à partir du site de référence de selenium
+ * Choisir la dernière version de numéro majeur 2
+ * http://selenium-release.storage.googleapis.com/index.html?path=2.53/
+ * https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+ */
 class Example extends PHPUnit_Extensions_Selenium2TestCase
 {
   protected function setUp()
